@@ -13,26 +13,6 @@ public class DinoController {
 	float dinoX;
 	float dinoY;
 	
-	class key implements KeyListener {
-
-		@Override
-		public void keyTyped(KeyEvent e) {
-
-			if (e.getKeyCode() == 38) {// 위
-				System.out.println("!");
-			} else if (e.getKeyCode() == 40) { // 아래
-
-			}
-		}
-
-		@Override
-		public void keyPressed(KeyEvent e) {
-		}
-
-		@Override
-		public void keyReleased(KeyEvent e) {
-		}
-	}
 	public void Jump() {
 		
 		dinoX = (float) (jump * Math.sin(jumpX));
