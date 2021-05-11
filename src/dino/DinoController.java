@@ -5,14 +5,14 @@ import java.awt.event.KeyListener;
 
 public class DinoController {
 	boolean isjumping = false;
-	float speed = 100f;
+	//float speed = 100f;
 	
 	float jumpX = 0; //점프 컨트롤 할때 필요한x
 	float jump = 100f;
 
 	float dinoX;
 	float dinoY;
-
+	
 	class key implements KeyListener {
 
 		@Override
@@ -33,32 +33,15 @@ public class DinoController {
 		public void keyReleased(KeyEvent e) {
 		}
 	}
-
-	public void Move() {
-		dinoX += speed;
-	}
-
 	public void Jump() {
 		
 		dinoX = (float) (jump * Math.sin(jumpX));
 		jumpX += .6f;
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		if (isjumping) {
 			
 		} else {
-			i
+			
 		}
 	}
 
