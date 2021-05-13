@@ -5,11 +5,13 @@ import java.util.Random;
 public class ObstacleController {
 
 	Random random = new Random();
-	
+
 	public boolean exist = false;
 	public int x;
 	public int y;
 	boolean type; // false = tree, true = flys.
+
+	int distance = 0;
 
 	ObstacleController() {
 		if (DataBase.score > 500) { // 500점 이상에서만 익룡 생성
@@ -21,7 +23,7 @@ public class ObstacleController {
 		} else {
 			type = true;
 		}
-		
-		exist= true;
+
+		exist = true;
 	}
 }

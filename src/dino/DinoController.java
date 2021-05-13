@@ -1,8 +1,5 @@
 package dino;
 
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-
 public class DinoController {
 	boolean isjumping = false;
 	//float speed = 100f;
